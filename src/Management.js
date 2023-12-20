@@ -35,6 +35,15 @@ function Management() {
     getReservations();
   }, []);
 
+  useEffect(()=>{
+    const themeColorMetaTag = document.querySelector('meta[name="theme-color"]');
+    if(showPopup == true){
+        themeColorMetaTag.setAttribute('content', '#C2C2C2'); // Replace with your desired color code
+    } else {
+      themeColorMetaTag.setAttribute('content', '#ffffff'); // Replace with your desired color code
+    }
+  },[showPopup])
+
   async function getReservations() {
     const querySnapshot = await getDocs(collection(db, "Bookings"));
     let reservations = [];

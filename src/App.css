@@ -318,6 +318,7 @@ input[type='date']{
 .wrapper-management .toggler button {
   border: none;
   height: 25px;
+  color: gray;
   background-color: transparent;
 }
 .wrapper-management .toggler button:hover, 
@@ -347,7 +348,7 @@ input[type='date']{
   bottom: 0;
   width: 100vw;
   height: 80vh;
-  max-height: 500px;
+  max-height: 600px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border: 1px solid lightgray;
@@ -407,7 +408,7 @@ input[type='date']{
   justify-content: space-around;
   margin-top: 50px;
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
 }
 
 .action-btns button {
@@ -437,7 +438,7 @@ input[type='date']{
 }
 .action-btns #accept:hover {
   background-color: white;
-  color: #0DBCD4;
+  color: #F1592C;
   border-color: #F1592C;
 }
 
