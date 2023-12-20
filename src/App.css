@@ -1,0 +1,481 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+::-webkit-scrollbar {
+  display: none;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ORANGE: F15A2C */
+
+.wrapper {
+  width: 90%;
+  max-width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+.wrapper h2 {
+  font-size: 50px;
+  color: gray;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.steps {
+  display: block;
+  height: 480px;
+  padding-bottom: 80px;
+}
+.steps p {
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+.steps input {
+  display: block;
+  margin: 10px auto;
+  width: 90%;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+}
+
+.nav-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  max-width: 350px;
+  height: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  
+}
+.nav-btns button {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #F15A2C;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.nav-btns button:hover {
+  background-color: white;
+  color: #F15A2C;
+  border-color: #F15A2C;
+  font-weight: bold;
+}
+
+
+.grid-phone {
+  margin: auto;
+  max-width:330px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  gap: 10px;
+}
+.grid-phone input{
+  /* width: 90%; */
+}
+
+select {
+  display: block;
+  width: 95%;
+  margin: auto;
+  height: 50px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-left:30px !important;
+  outline: none;
+  font-size: 15px;
+  color: gray;
+  background-color: white;
+  text-align: center !important;
+}
+
+input[type='date']{
+  -webkit-appearance: none !important;
+  display: block;
+  width: 95%;
+  margin: auto;
+  height: 50px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.steps h3 {
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+
+.steps button {
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: #0DBCD4;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-top: 30px;
+}
+
+.steps button:hover {
+  border-color: #0DBCD4;
+  background-color: transparent;
+  color: #0DBCD4;
+}
+
+.steps h4 {
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+
+.confirmation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.confirmation .checkIcon {
+  font-size: 100px;
+  color: rgb(71, 183, 71);
+  margin-top: -20%;
+}
+.confirmation h2 {
+  margin: 0;
+  font-size: 40px;
+  color: gray;
+}
+.confirmation p {
+  display: block;
+  width: 60%;
+  font-size: 20px;
+  color: gray;
+  margin: 20px 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* ======  MANAGEMENT  ========   */
+
+.wrapper-management {
+  padding: 60px 10px 30px 10px;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.header img {
+  height: 90%;
+}
+
+.wrapper-management h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 20px 5px;
+}
+
+
+.reservations-row {
+  display: grid;
+  grid-template-columns: 45px auto 80px;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.reservations-row .row-status-icon {
+  font-size: 30px;
+}
+
+.reservations-row .verticalDate {
+  text-align: center;
+}
+
+.reservations-row .verticalDate #day {
+  font-size: 30px;
+}
+.reservations-row .verticalDate #month {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(212, 92, 92);;
+}
+.reservations-row .verticalDate #year {
+  font-size: 10px;
+}
+
+.reservations-row p{
+  margin: 0;
+}
+
+.reservations-row #name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.wrapper-management .toggler {
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.wrapper-management .toggler button {
+  border: none;
+  height: 25px;
+  background-color: transparent;
+}
+.wrapper-management .toggler button:hover, 
+.wrapper-management .toggler .focus{
+  color: white;
+  background-color: #0DBCD4;
+}
+.wrapper-management .toggler #left {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.wrapper-management .toggler #right {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.wrapper-management .toggler #center {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+
+
+.wrapper-management .popup{
+  position: fixed;
+  background-color: whitesmoke;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 80vh;
+  max-height: 500px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border: 1px solid lightgray;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  animation: popup 0.3s;
+  z-index: 999;
+}
+.wrapper-management .popup h2{
+  background-color: #0DBCD4;
+  color: white;
+  width: calc((100% + 20px));
+  margin-left: -10px;
+  margin-top: -21px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.wrapper-management .popup .details p{
+  color: black;
+  margin: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+
+.wrapper-management .overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.238);
+}
+
+@keyframes popup {
+  from {
+    bottom: -100vh;
+  }
+  to {
+    bottom: 0;
+  }
+  
+}
+
+.action-btns {
+  display: flex;
+  gap: 10px;
+  width: 95%;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.action-btns button {
+  width: 95%;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.action-btns #decline {
+  background-color: gray;
+  color: white;
+}
+
+.action-btns #decline:hover {
+  background-color: white;
+  color: gray;
+  border-color: gray;
+}
+
+
+.action-btns #accept {
+  background-color: #F1592C;
+  color: white;
+}
+.action-btns #accept:hover {
+  background-color: white;
+  color: #0DBCD4;
+  border-color: #F1592C;
+}
+
+
+
+.reservation-icons {
+  margin-right: 10px;
+  color: rgba(128, 128, 128, 0.659);
+} 
+
+
+
+.reservation-status {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.statusIcon {
+  font-size: 60px;
+  text-align: center;
+}
+
+.reservation-status .approved{
+  color: rgb(92, 212, 92);
+}
+.reservation-status .declined{
+  color: rgb(212, 92, 92);
+}
+.reservation-status p{
+  font-size: 18px;
+  color: gray;
+}
+
+.divider {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
